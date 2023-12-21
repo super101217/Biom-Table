@@ -1,6 +1,6 @@
 import { call, put } from 'redux-saga/effects';
 import { AppActions } from 'store';
-import { getList } from 'apis/home';
+import { getList } from 'apis';
 import { DataType } from 'types';
 
 export function* getDataListSaga() {
