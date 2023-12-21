@@ -23,6 +23,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "cy:open": "cypress open",
+    "test:e2e:dev": "start-server-and-test http-get://127.0.0.1:3000 cy:open",
     "eject": "react-scripts eject",
     "prepare": "husky install"
   },
@@ -51,9 +53,11 @@
     ]
   },
   "devDependencies": {
+    "cypress": "^13.6.1",
     "eslint": "^8.56.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "husky": "^8.0.3",
-    "prettier": "^3.1.1"
+    "prettier": "^3.1.1",
+    "start-server-and-test": "^2.0.3"
   }
 }
