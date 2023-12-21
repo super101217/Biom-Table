@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import {
   LoadingComponent,
+  PagainationComponent,
   SelectboxComponent,
   TableComponent,
 } from 'components';
@@ -64,6 +65,10 @@ export const HomeViewComponent: React.FC = () => {
                 level={level}
                 data={dataList.data}
                 curPage={curPage}
+              />
+              <PagainationComponent
+                totalPage={dataList.rows.length}
+                setPage={onSetPage}
               />
             </>
           )}
